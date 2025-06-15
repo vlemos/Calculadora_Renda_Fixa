@@ -81,6 +81,9 @@ if enviado:
     if valor_face <=0:
         st.warning('Informe um valor Maior que Zero!')
         st.stop()
+    if data_compra >= data_venda:
+       st.warning('A data da Compra deve ser menor que a data da venda')
+       st.stop()  
     if opcao == 'Selecione':
         st.warning('Selecione uma Opção')
         st.stop()
